@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <title>MoreRuby</title>
+  <%- include ('partials/head')%>
+
+
+    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+
+<body class="text-center">
+
+  <header>
+    <%- include ('partials/navigation')%>
+  </header>
+  
+  <div class="mar">
+  <div class="conteiner p-5">
+ 
+  </div>
+  <main class="form-signin text-center shadow-lg p-3 mb-5 animate__bounceIn">
+  <form action="/register" method="POST">
+    <a class="mb-4" ><i class="fas fa-user-plus fa-4x " style="color:#7952b3"></i></a>
+    <p><br></p>
+    <div class="form-floating">
+      
+      <input id="name" name="name" type="text" class="form-control"  placeholder="name"  pattern="[A-Za-z ]+"> 
+      <label for="user">Name</label>
+    </div>
+    <div class="form-floating">
+      
+      <input id="user" name="user" type="text" class="form-control"  placeholder="name">
+      <label for="user">User</label>
+    </div>
+    <div class="form-floating">
+      
+      <input id="pass" name="pass" type="password" class="form-control"  placeholder="name" minlength="4">
+      <label for="user">Password</label>
+    </div>
+    <br>
+    <button type="submit" class="w-100 btn btn-lg btn-bd-primary">Registrarse</button>
+
+</form>
+</main>
+   
+
+    <div class="conteiner p-4">
+ 
+    </div>
+
+  </div>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <% if(alert) { %>
+    <script>
+      Swal.fire({
+        title: '<%= alertTitle %>',
+        text: '<%= alertMessage %>',
+        icon: '<%= alertIcon %>',
+        showConfirmButton: '<%= showConfirmButton %>',
+        timer: '<%= timer %>'
+    }).then(() => {
+          window.location = '/<%= ruta %>'
+        })
+    </script>
+    <% } %>
+  <footer>
+    <%- include ('partials/footer')%>
+  </footer>
+</body>
+
+</html>
