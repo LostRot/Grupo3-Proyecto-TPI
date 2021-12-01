@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/aja/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/slider.css">
     <title>
         MoreRuby
     </title>
@@ -41,11 +42,23 @@
                 <li class="menu__item"><a href="" class="menu__link">Sobre nosotros</a></li>
             </ul>
         </nav>
-
+        <div class="container-slider">
+            <div class="slider" id="slider">
+                <div class="slider-section"><img src="/img/ruby1.webp" alt="" class="slider__img"></div>
+                <div class="slider-section"><img src="/img/ruby2.jpg" alt="" class="slider__img"></div>
+                <div class="slider-section"><img src="/img/ruby3.png" alt="" class="slider__img"></div>
+                <div class="slider-section"><img src="/img/ruby4.png" alt="" class="slider__img"></div>
+            </div>
+            <div class="slider__btn slider__btn--right" id="btn__right">&#62</div>
+            <div class="slider__btn slider__btn--left" id="tbn__left">&#60</div>
+        </div>
+        <br>
+        <br>
         <footer>
-            <!-- <%- include ('partials/footer')%> -->
+            <%- include ('partials/footer')%>
         </footer>
         <script src="/js/menu.js"></script>
+        <script src="/js/slider.js"></script>
 </body>
 
 </html>
