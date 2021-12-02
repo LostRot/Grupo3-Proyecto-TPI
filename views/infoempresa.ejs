@@ -5,44 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quienes somos?</title>
-    <link rel="stylesheet" href="/css/lightbox.min.css">
-    <link rel="stylesheet" href="/css/lol.css">
+    <title>
+        MoreRuby
+    </title>
+    <%- include ('partials/head')%>
+
 </head>
 
 <body>
-    <h1>¿Quienes somos?</h1>
-<div class="gallery-container">
-    <div class="gallery-card">
-        <a href="img/img-1.jpg" data-lightbox="roadtrip"><img src="img/img-1.jpg" alt="Imagen"></a>
+
+<header>
+    <%- include ('partials/navigation2')%>
+    <%- include ('partials/navigation3')%>
+
+</header>
+   
+<div class="mar">
+
+    <div class="container-fluid text-center ">
+        <img src="/img/fondo.png" class="img-fluid animate__bounceIn" >
+            
     </div>
-    <div class="gallery-card">
-        <a href="img/img-2.jpg" data-lightbox="roadtrip"><img src="img/img-2.jpg" alt="Imagen"></a>
+<!--
+    <div class="container " >
+        <header class="row">
+            <div class="col-lg-12 text-center" >
+                <img src="/img/ruby.png" class="img-fluid animate__bounceIn" width="100px" style="margin: 20px;">
+            
+
+            </div>
+
+        </header>
+
     </div>
-    <div class="gallery-card">
-        <a href="img/img-3.jpg" data-lightbox="roadtrip"><img src="img/img-3.jpg" alt="Imagen"></a>
+
+    <div class="container-fluid" >
+        <div class="row p-5 text center">
+            <div class="col-sm-6">
+                <p class="fs-1">Ruby</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="/img/homer.gif" class="img-fluid " width="250px" style="margin: 20px;  border-radius: 1000px;">
+             </div>
+             <div class="col-sm-3 text-justify">
+                <p class="font-weight-light">Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, creado por el programador japonés Yukihiro "Matz" Matsumoto, quien comenzó a trabajar en Ruby en 1993, y lo presentó públicamente en 1995.</p>
+             </div>
+
+        </div>
+
     </div>
-    <div class="gallery-card">
-        <a href="img/img-4.jpg" data-lightbox="roadtrip"><img src="img/img-4.jpg" alt="Imagen"></a>
-    </div>
-    <div class="gallery-card">
-        <a href="img/img-5.jpg" data-lightbox="roadtrip"><img src="img/img-5.jpg" alt="Imagen"></a>
-    </div>
-    <div class="gallery-card">
-        <a href="img/img-6.jpg" data-lightbox="roadtrip"><img src="img/img-6.jpg" alt="Imagen"></a>
-    </div>
-  
+    <div class="container-fluid" >
+        <div class="row p-5 text center">
+            <div class="col-sm-6">
+             
+            </div>
+            <div class="col-sm-3">
+               
+             </div>
+             <div class="col-sm-3">
+              
+             </div>
+
+        </div>
+
+    </div>-->    
 </div>
-
-
-
-
-
-
-
-<script src="/js/lightbox-plus-jquery.min.js"></script>
-<script src="/js/lightbox.min.js"></script>
-
+<footer>
+    <%- include ('partials/footer')%>
+</footer>
+   
 </body>
 
 </html>
