@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cards.css">
     <title>
         MoreRuby
     </title>
@@ -14,47 +15,45 @@
 
 <body>
 
-<header>
-    <%- include ('partials/navigation2')%>
-    <%- include ('partials/navigation3')%>
+    <header>
+        <%- include ('partials/navigation2')%>
+            <%- include ('partials/navigation3')%>
 
-</header>
-<article class="container-fluid  postcard dark blue">
-    <a class="postcard__img_link" href="#">
-        <img class=" img-fluid postcard__img"
-            src="https://cdn.thenewstack.io/media/2020/08/32b6ae37-cdee1264-creative-commons-photo-by-mathias-meyer-via-wikipedia-1241px-yukihiro_matsumoto_euruko_2011.jpg"
-            alt="Image Title" />
-    </a>
-    <div class="postcard__text">
-        <h1 class="postcard__title blue"><a href="#">Creador</a></h1>
-        <div class="postcard__subtitle small">
-            <!-- <time datetime="2021-12-01 12:00:00">
-            <i class="fas fa-calendar-alt mr-2"></i>Mon, Dec 01st 2021
-        </time> -->
+    </header>
+    <article class="container-fluid  postcard dark blue">
+        <div class="postcard__text">
+            <h1 class="postcard__title blue"><a href="#">¿Quines somos?</a></h1>
+            <div class="postcard__subtitle small">
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt text-light">Somos un grupo de estudiantes de la universidad de El Salvador de la carrera de ingenieria en sistemas informaticos, de la materia Tecnicas de Programación en Internet &#40;TPI115&#41;.</div>
         </div>
-        <div class="postcard__bar"></div>
-        <div class="postcard__preview-txt">El lenguaje fue creado por Yukihiro "Matz" Matsumoto,
-            quien empezó a trabajar en Ruby el 24 de febrero de 1993, y lo presentó al público
-            en el año 1995. En el círculo de amigos de Matsumoto se le puso el nombre de Ruby
-            &#40;en español rubí&#41; como broma aludiendo al lenguaje de programación Perl
-            &#40;perla en inglés&#41;. El creador del lenguaje ha dicho que Ruby está diseñado
-            para la productividad y la diversión del desarrollador,
-            siguiendo los principios de una buena interfaz de usuario. Sostiene que el diseño de
-            sistemas necesita enfatizar las necesidades humanas más que las de la máquina.</div>
-        <!-- <ul class="postcard__tagbox">
-            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-            <li class="tag__item play blue">
-                <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-            </li>
-        </ul> -->
-    </div>
-</article>
+    </article>
+    <article class="container-fluid  postcard dark blue">
+        <div class="postcard__text">
+            <h1 class="postcard__title blue"><a href="#">Misión</a></h1>
+            <div class="postcard__subtitle small">
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt text-light">Institución en nuestro país eminentemente académica, rectora de la educación superior, formadora de profesionales con alores éticos firmes, garante del desarrollo, de la ciencia, el arte, la cultura y el deporte. Crítica de la realidad, con
+                capacidad de proponer soluciones a los problemas nacionales a través de la investigación filosófica, científica artística y tecnológica; de carácter universal.</div>
+        </div>
+    </article>
+    <article class="container-fluid  postcard dark blue">
+        <div class="postcard__text">
+            <h1 class="postcard__title blue"><a href="#">Visión</a></h1>
+            <div class="postcard__subtitle small">
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt text-light">Ser una universidad transformadora de la educación superior y desempeñar un papel protagónico relevante, en la transformación de la conciencia crítica y prepositiva de la sociedad salvadoreña, con liderazgo en la innovación educativa y excelencia
+                académica, a través de la integración de las funciones básicas de la universidad: la docencia la investigación y la proyección social.</div>
+        </div>
+    </article>
 
-<footer>
-    <%- include ('partials/footer')%>
-</footer>
-   
+    <footer>
+        <%- include ('partials/footer')%>
+    </footer>
+
 </body>
 
 </html>
