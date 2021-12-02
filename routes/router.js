@@ -22,6 +22,24 @@ router.get('/evaluaciones', authController.isAuthenticated, (req, res) => {
 router.get('/infoempresa', authController.isAuthenticated, (req, res) => {
     res.render('infoempresa', { user: req.user })
 })
+router.get('/ejemplos', authController.isAuthenticated, (req, res) => {
+    res.render('ejemplos', { user: req.user })
+})
+router.get('/tema1', authController.isAuthenticated, (req, res) => {
+    res.render('tema1', { user: req.user })
+})
+router.get('/tema2', authController.isAuthenticated, (req, res) => {
+    res.render('tema2', { user: req.user })
+})
+router.get('/tema3', authController.isAuthenticated, (req, res) => {
+    res.render('tema3', { user: req.user })
+})
+router.get('/tema4', authController.isAuthenticated, (req, res) => {
+    res.render('tema4', { user: req.user })
+})
+router.get('/configuracion', authController.isAuthenticated, (req, res) => {
+    res.render('configuracion', { user: req.user })
+})
 router.get('/paginaerror', (req, res) => {
     res.render('paginaerror')
 })
