@@ -40,6 +40,9 @@ router.get('/tema4', authController.isAuthenticated, (req, res) => {
 router.get('/configuracion', authController.isAuthenticated, (req, res) => {
     res.render('configuracion', { user: req.user })
 })
+router.get('/consola', authController.isAuthenticated, (req, res) => {
+    res.render('consola', { user: req.user })
+})
 router.get('/paginaerror', (req, res) => {
     res.render('paginaerror')
 })
