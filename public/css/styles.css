@@ -3,15 +3,15 @@
 .btn-bd-primary {
     font-weight: 600;
     color: #fff;
-    background-color: #000000;
-    border-color: #ffffff;
+    background-color: #61428f;
+    border-color: #61428f;
 }
 
 .btn-bd-primary:hover,
 .btn-bd-primary:active {
     color: #fff;
     background-color: #61428f;
-    border-color: #61428f
+    border-color: #61428f;
 }
 
 .btn-bd-primary:focus {

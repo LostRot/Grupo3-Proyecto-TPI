@@ -1,8 +1,8 @@
 body {
     font-family: 'Bebas Neue', cursive;
     font-family: 'Kanit', sans-serif;
-    /* background: linear-gradient(to right, #9796f0, #faabbf, #f8afc2, #9796f0); */
-    background: gray;
+    background: #110f16;
+   
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: grid;
     min-height: 100vh;

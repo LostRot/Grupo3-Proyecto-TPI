@@ -9,7 +9,7 @@ body {
 }
 
 .nav-bar {
-    background: rgb(67, 93, 240);
+    background: rgb(49, 49, 49);
     height: 35px;
     display: block;
     color: white;
@@ -55,7 +55,7 @@ body {
 }
 
 .submenu .menu__link {
-    background: rgb(131, 116, 116);
+    background: rgb(49, 49, 49);
     padding-left: 40px;
 }
 
