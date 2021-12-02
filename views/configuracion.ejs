@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cards.css">
     <title>
         MoreRuby
     </title>
@@ -15,63 +16,106 @@
 <body>
 
     <%- include ('partials/navigation2')%>
-    <%- include ('partials/navigation3')%>
+        <%- include ('partials/navigation3')%>
 
-   
-<div class="mar">
 
-    <div class="container-fluid text-center ">
-        <img src="/img/fondo.png" class="img-fluid animate__bounceIn" >
-            
-    </div>
-<!--
-    <div class="container " >
-        <header class="row">
-            <div class="col-lg-12 text-center" >
-                <img src="/img/ruby.png" class="img-fluid animate__bounceIn" width="100px" style="margin: 20px;">
-            
-
+            <div class="mar">
+                <div class="container-fluid">
+                    <div class="postcard__text">
+                        <h1 class="h1 text-center text-light" id="pageHeaderTitle">Instalaciones y configuraciones</h1>
+                    </div>
+                </div>
+                <article class="postcard dark red">
+                    <a class="postcard__img_link" href="#">
+                        <!-- <img class="postcard__img" src="https://www.thoughtco.com/thmb/JpBnEUWE4Szf34r-7z0pKoQUPCs=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/2000px-Ruby-logo-R.svg-56a811b75f9b58b7d0f05e83.jpg" alt="Image Title" /> -->
+                    </a>
+                    <div class="postcard__text">
+                        <!-- <h1 class="postcard__title red"><a href="#">Ruby</a></h1> -->
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Hay varias herramientas para instalar ruby en las herramientas mas impportantes:
+                            <ul>
+                                <li>En Linux/Unix, puedes utilizar el sistema de gestión de paquetes de tu distribución o herramientas de terceros &#40;rbenv y RVM&#41;.</li>
+                                <li>En computadoras con sistema operativo macOS, puedes utilizar herramientas de terceros &#40;rbenv y RVM&#41;.</li>
+                                <li>En computadoras con sistema operativo Windows, puedes utilizar <a href="https://rubyinstaller.org/">RubyInstaller</a>.</li>
+                            </ul>
+                            <p>Para instalar ruby, los metodos varian dependiedo de nuestro sistema operativo:</p>
+                            <ul>
+                                <li>Si lo necesitas en un sistema tipo UNIX, la manera más sencilla de instalarlo es usando el sistema de gestión de paquetes de la distribución. Sin embargo, la versión de Ruby provista puede no ser la más nueva.</li>
+                                <li>Se pueden usar los instaladores para instalar una o varias versiones de Ruby. Incluso existe un instalador para Windows.</li>
+                                <li>Los gestores te ayudan a cambiar entre varias versiones de Ruby en tu sistema.</li>
+                                <li>Puedes compilar Ruby desde el código fuente.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
             </div>
-
-        </header>
-
-    </div>
-
-    <div class="container-fluid" >
-        <div class="row p-5 text center">
-            <div class="col-sm-6">
-                <p class="fs-1">Ruby</p>
+            <div class="mar">
+                <article class="postcard dark red">
+                    <a class="postcard__img_link" href="#">
+                        <!-- <img class="postcard__img" src="https://www.thoughtco.com/thmb/JpBnEUWE4Szf34r-7z0pKoQUPCs=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/2000px-Ruby-logo-R.svg-56a811b75f9b58b7d0f05e83.jpg" alt="Image Title" /> -->
+                    </a>
+                    <div class="postcard__text">
+                        <!-- <h1 class="postcard__title red"><a href="#">Ruby</a></h1> -->
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">
+                            <p>_____Instalacion en windows</p>
+                            <ul>
+                                <li>Primero descargamos el <a href="https://rubyinstaller.org/">instalador <br></a>
+                                    <img src="/img/Instalacion de ruby/w1.JPG" width="50%" alt=""></li>
+                                <li>Ejecutamos el instalador y aceptamos la licencia <br>
+                                    <img src="/img/Instalacion de ruby/w2.JPG" width="50%" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
             </div>
-            <div class="col-sm-3">
-                <img src="/img/homer.gif" class="img-fluid " width="250px" style="margin: 20px;  border-radius: 1000px;">
-             </div>
-             <div class="col-sm-3 text-justify">
-                <p class="font-weight-light">Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, creado por el programador japonés Yukihiro "Matz" Matsumoto, quien comenzó a trabajar en Ruby en 1993, y lo presentó públicamente en 1995.</p>
-             </div>
-
-        </div>
-
-    </div>
-    <div class="container-fluid" >
-        <div class="row p-5 text center">
-            <div class="col-sm-6">
-             
+            <div class="mar">
+                <article class="postcard dark red">
+                    <a class="postcard__img_link" href="#">
+                        <!-- <img class="postcard__img" src="https://www.thoughtco.com/thmb/JpBnEUWE4Szf34r-7z0pKoQUPCs=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/2000px-Ruby-logo-R.svg-56a811b75f9b58b7d0f05e83.jpg" alt="Image Title" /> -->
+                    </a>
+                    <div class="postcard__text">
+                        <!-- <h1 class="postcard__title red"><a href="#">Ruby</a></h1> -->
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">
+                            <ul>
+                                <li>Seleccionamos una ruta para la instlacion y pulsamos Install <br>
+                                    <img src="/img/Instalacion de ruby/w3.JPG" width="50%" alt="">
+                                </li>
+                                <li>Seleccionamos los componentes que deseamos instalar, en este caso los seleccionamos todos, seleccionamos Next y empezara la instalacion<br>
+                                    <img src="/img/Instalacion de ruby/w4.JPG" width="50%" alt=""></li>
+                                <li>
+                                    seleccionamos Finish, y tendremos instalado Ruby en nuestro PC <br>
+                                    <img src="/img/Instalacion de ruby/w5.JPG" width="50%" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
             </div>
-            <div class="col-sm-3">
-               
-             </div>
-             <div class="col-sm-3">
-              
-             </div>
+            <div class="mar">
+                <article class="postcard dark red">
+                    <a class="postcard__img_link" href="#">
+                        <!-- <img class="postcard__img" src="https://www.thoughtco.com/thmb/JpBnEUWE4Szf34r-7z0pKoQUPCs=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/2000px-Ruby-logo-R.svg-56a811b75f9b58b7d0f05e83.jpg" alt="Image Title" /> -->
+                    </a>
+                    <div class="postcard__text">
+                        <!-- <h1 class="postcard__title red"><a href="#">Ruby</a></h1> -->
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">
+                            <p>Instalacion en debian o Ubuntu</p>
+                            <ul>
+                                <li>Debian GNU/Linux y Ubuntu usan el gestor de paquetes apt. </li>
+                                <li>$ sudo apt-get install ruby-full</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <footer>
+                <%- include ('partials/footer')%>
+            </footer>
 
-        </div>
-
-    </div>-->    
-</div>
-<footer>
-    <%- include ('partials/footer')%>
-</footer>
-   
 </body>
 
 </html>
