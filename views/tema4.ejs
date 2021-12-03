@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cards.css">
     <title>
         MoreRuby
     </title>
@@ -16,59 +17,169 @@
 
 <header>
     <%- include ('partials/navigation2')%>
+    <%- include ('partials/navigation3')%>
 
 </header>
-   
-<div class="mar">
-
-    <div class="container-fluid text-center ">
-        <img src="/img/fondo.png" class="img-fluid animate__bounceIn" >
-            
-    </div>
-<!--
-    <div class="container " >
-        <header class="row">
-            <div class="col-lg-12 text-center" >
-                <img src="/img/ruby.png" class="img-fluid animate__bounceIn" width="100px" style="margin: 20px;">
-            
-
-            </div>
-
-        </header>
-
-    </div>
-
-    <div class="container-fluid" >
-        <div class="row p-5 text center">
-            <div class="col-sm-6">
-                <p class="fs-1">Ruby</p>
-            </div>
-            <div class="col-sm-3">
-                <img src="/img/homer.gif" class="img-fluid " width="250px" style="margin: 20px;  border-radius: 1000px;">
-             </div>
-             <div class="col-sm-3 text-justify">
-                <p class="font-weight-light">Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, creado por el programador japonés Yukihiro "Matz" Matsumoto, quien comenzó a trabajar en Ruby en 1993, y lo presentó públicamente en 1995.</p>
-             </div>
-
+<article class="container-fluid  postcard dark blue text-center">
+    <div class="postcard__text">
+        <h1 class="postcard__title blue"><a href="#">Tema: Estructuras iterativas</a></h1>
+       </div>
+</article>
+<article class="container-fluid  postcard dark blue">
+  
+    <div class="postcard__text">
+        <h1 class="postcard__title blue text-center"><a href="#">Aritméticos</a></h1>
+        <div class="postcard__subtitle small">
         </div>
-
-    </div>
-    <div class="container-fluid" >
-        <div class="row p-5 text center">
-            <div class="col-sm-6">
-             
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt text-light"> <strong > <h4>. Concepto</h4> </strong> 
+            <p>Los operadores aritméticos son aquellos que "manipulan" datos numéricos, tanto enteros como reales. Hay 2 tipos de operadores aritméticos: unarios y binarios. Los operadores unarios se anteponen a la expresión aritmética, y son los operadores de signo. Los operadores binarios se sitúan entre 2 expresiones aritméticas.</p> 
+        <strong > <h4>. Descripción</h4> </strong>
+        <p> Los operadores aritmeticos son + (suma), - (resta), * (multiplicación), / (división), % (modulo)  y ** (potencia), los operadores de ejecutan en un orden especifico, primero la potencia, luego la multiplicación, división y modulo, por último se ejecuta la suma y resta, este orden se puede alterar usando ().</p> </div>
+   <br>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h5><strong>Ejemplo</strong>  </h5>
+                <br>
             </div>
-            <div class="col-sm-3">
+        </div>
+            <div class="row text-center">
                
-             </div>
-             <div class="col-sm-3">
-              
-             </div>
-
+            <div class="col-sm-6 ">
+                
+                <div class="text-light ">Código</div>
+                <img class="img-fluid " src="img/aritmetico1.png"  alt="Imagen">
+            </div>
+           
+            <div class="col-sm-6">
+                
+                <div class="text-light text-justify">Resultado </div>
+                <img class="img-fluid" src="img/aritmetico2.png" alt="Imagen">
+            </div>
+           
+           
+          
         </div>
+    
+    </div>
 
-    </div>-->    
+
+</article>
+
+<article class="container-fluid  postcard dark blue">
+  
+    <div class="postcard__text">
+        <h1 class="postcard__title blue text-center"><a href="#">Comparación</a></h1>
+        <div class="postcard__subtitle small">
+        </div>
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt text-light"> <strong > <h4>. Concepto</h4> </strong> 
+            <p>Los operadores de comparación comparan dos expresiones y Boolean devuelven un valor que representa la relación de sus valores.</p> 
+            
+        <strong > <h4>. Descripción</h4> </strong>
+        <p> Estos operadores nos devuelven verdadero o falso dependiendo el resultado de la comparacion. </p> </div>
+   <br>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h5><strong>Ejemplo</strong>  </h5>
+                <br>
+            </div>
+        </div>
+            <div class="row text-center">
+               
+            <div class="col-sm-6 ">
+                
+                <div class="text-light ">Código</div>
+                <img class="img-fluid " src="img/comparacion.png"  alt="Imagen">
+            </div>
+           
+            <div class="col-sm-6">
+                
+                <div class="text-light text-justify">Resultado </div>
+                <img class="img-fluid" src="img/comparacion2.png" alt="Imagen">
+            </div>
+           
+           
+          
+        </div>
+    
+    </div>
+
+
+</article>
+
+<article class="container-fluid  postcard dark blue">
+  
+    <div class="postcard__text">
+        <h1 class="postcard__title blue text-center"><a href="#">Lógicos</a></h1>
+        <div class="postcard__subtitle small">
+        </div>
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt text-light"> <strong > <h4>. Concepto</h4> </strong> <p>Los operadores lógicos se usan para combinar dos valores Booleanos y devolver un resultado verdadero, falso o nulo. Los operadores lógicos también se denominan operadores Booleanos.</p> 
+        <strong > <h4>. Descripción</h4> </strong>
+        <p>  El operador && (and) nos devuelve verdadero si todos sus parametros son verdaderos, el operador || (or) nos devuelve verdadero si almenos uno de sus parametros es verdadero y el operador ! (not) convierte de verdadero a falso y viceversa. </p> </div>
+   <br>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h5><strong>Ejemplo</strong>  </h5>
+                <br>
+            </div>
+        </div>
+            <div class="row text-center">
+               
+            <div class="col-sm-6 ">
+                
+                <div class="text-light ">Código</div>
+                <img class="img-fluid " src="img/logico1.png"  alt="Imagen">
+            </div>
+           
+            <div class="col-sm-6">
+                
+                <div class="text-light text-justify">Resultado </div>
+                <img class="img-fluid" src="img/logico2.png" alt="Imagen">
+            </div>
+           
+           
+          
+        </div>
+    
+    </div>
+
+
+</article>
+
+
+<article class="container-fluid  postcard dark blue text-center">
+    <div class="postcard__text">
+        <h1 class="postcard__title blue"><a href="#">Vídeos</a></h1>
+    </div>
+       
+</article>
+<div class="container-fluid  text-center">
+    <div class="row text-center">
+               
+        <div class="col-sm-6 ">
+            
+            <div class="text-light ">ARITMETICOS</div>
+            <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/1REiidJCW58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+       
+        <div class="col-sm-6">
+            <div class="text-light ">COMPARACION</div>
+            <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/r3_ZdFvcl6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+       
+        <div class="col-sm-6">
+            <div class="text-light ">LOGICOS</div>
+            <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/WRZKWSruvUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+     
+    </div>
 </div>
+
+
+
 <footer>
     <%- include ('partials/footer')%>
 </footer>
