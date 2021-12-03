@@ -43,6 +43,12 @@ router.get('/tema5', authController.isAuthenticated, (req, res) => {
 router.get('/configuracion', authController.isAuthenticated, (req, res) => {
     res.render('configuracion', { user: req.user })
 })
+router.get('/cuestionario1', authController.isAuthenticated, (req, res) => {
+    res.render('cuestionario1', { user: req.user })
+})
+router.get('/cuestionario2', authController.isAuthenticated, (req, res) => {
+    res.render('cuestionario2', { user: req.user })
+})
 router.get('/consola', authController.isAuthenticated, (req, res) => {
     res.render('consola', { user: req.user })
 })

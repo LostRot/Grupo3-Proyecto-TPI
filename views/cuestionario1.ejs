@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/acordeon.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <title>
+        MoreRuby
+    </title>
+    <%- include ('partials/head')%>
+
+</head>
+
+<body>
+
+<header>
+    <%- include ('partials/navigation2')%>
+    <%- include ('partials/navigation3')%>
+
+</header>
+
+
+
+<section class="pb-md-5">
+  <div class="container pb-md-5">
+    <div class="row">
+      <div class="col-12 mt-5 ">
+        <h2 class="text-center d-block pb-4">
+          NIVEL BASICO
+        </h2>
+        <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel text-center">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a class="text-decoration-none"   role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          PRIMER CUESTIONARIO
+					        </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+              <div style="background-color: #ffff;">
+                <div class="row">
+                  <div class="col-12 ">
+                    <iframe class="container-fluid" src="https://docs.google.com/forms/d/e/1FAIpQLSeEP6OMiSqqlgasv-lKORdWWz2S62anHukJXy6A47WRO_bCuQ/viewform?embedded=true" width="640" height="400" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>  
+                </div>
+                 
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- end of panel -->
+
+          <div class="panel text-center">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="text-decoration-none" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					         SEGUNDO CUESTIONARIO
+					        </a>
+              </h4>
+            </div>
+             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div style="background-color: #ffff;">
+                <iframe class="container-fluid" src="https://docs.google.com/forms/d/e/1FAIpQLSeM7YXFzICLEylVxz-7JjQP7PKMQDROosVvxZKbLEzE8Hp5tQ/viewform?embedded=true" width="640" height="400" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+          
+            </div>
+            </div>
+          </div>
+          <!-- end of panel -->
+
+          <div class="panel text-center">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="text-decoration-none" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          TERCER CUESTIONARIO
+					        </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div style="background-color: #ffff;">
+                <iframe class="container-fluid" src="https://docs.google.com/forms/d/e/1FAIpQLSclTLSjtLBzFRpV4DxKtIaSn2pHW_GZ4Dd4evTglEVq0SMT7Q/viewform?embedded=true" width="640" height="400" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>   </div>
+            </div>
+          </div>
+          <!-- end of panel -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<footer>
+    <%- include ('partials/footer')%>
+</footer>
+   
+</body>
+
+</html>
