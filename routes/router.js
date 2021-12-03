@@ -37,6 +37,9 @@ router.get('/tema3', authController.isAuthenticated, (req, res) => {
 router.get('/tema4', authController.isAuthenticated, (req, res) => {
     res.render('tema4', { user: req.user })
 })
+router.get('/tema5', authController.isAuthenticated, (req, res) => {
+    res.render('tema5', { user: req.user })
+})
 router.get('/configuracion', authController.isAuthenticated, (req, res) => {
     res.render('configuracion', { user: req.user })
 })
