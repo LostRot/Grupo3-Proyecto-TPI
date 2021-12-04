@@ -22,22 +22,23 @@
 </header>
 <article class="container-fluid  postcard dark blue text-center">
     <div class="postcard__text">
-        <h1 class="postcard__title blue"><a href="#">Tema: Conceptos básicos</a></h1>
+        <h1 class="postcard__title blue"><a href="#"> Métodos y clases</a></h1>
        </div>
 </article>
 <article class="container-fluid  postcard dark blue">
   
     <div class="postcard__text">
-        <h1 class="postcard__title blue text-center"><a href="#">Variables</a></h1>
+        <h1 class="postcard__title blue text-center"><a href="#">Métodos</a></h1>
         <div class="postcard__subtitle small">
         </div>
         <div class="postcard__bar"></div>
-        <div class="postcard__preview-txt text-light"> <strong > <h4>. Concepto</h4> </strong> <p>Es un elemento de datos con nombre cuyo valor puede cambiar durante el curso de la ejecución de un programa.</p> 
+        <div class="postcard__preview-txt text-light"> <strong > <h4>. Concepto</h4> </strong> 
+            <p>se utiliza para evaluar una expresión condicional: si se cumple la condición (es verdadera), ejecutará un bloque de código. Si es falsa, es posible ejecutar otras sentencias.</p> 
         <strong > <h4>. Descripción</h4> </strong>
-        </p>  En primer lugar se coloca el nombre que tendra nuesta varible, este debe expresar el contenido que contendra la variable (no deben utilizarse palabras reservadas para definir variables, ni inicializar las varibles con mayusculas o números), luego el operador de asignacion = y por ultimo el dato que contendra dicha varible (En ruby no es necesario definir el tipo de datos y su tipo puede cambiar a lo largo de la ejecución del programa).</p> </div>
-   <br>
+        <br>
         <div class="row">
-            <div class="col-sm-12 text-center">
+            <div class="col-sm-12 ">
+                <p> Se utiliza con la palabra reservada if, else, elsif y end. Para iniciar la estructura se coloca el if seguido de la condición que se evaluará, si solo pondremos una linea de codigo no es necesario colocar end al final del codigo que comprenderá la estructura, el else se utiliza para colocar el codigo que se ejecura si la condición da como resultado false.</p> </div>
                 <h5><strong>Ejemplo</strong>  </h5>
                 <br>
             </div>
@@ -47,13 +48,13 @@
             <div class="col-sm-6 ">
                 
                 <div class="text-light ">Código</div>
-                <img class="img-fluid " src="img/variables1.png"  alt="Imagen">
+                <img class="img-fluid " src="img/selectivas1.png"  alt="Imagen">
             </div>
            
             <div class="col-sm-6">
                 
                 <div class="text-light text-justify">Resultado </div>
-                <img class="img-fluid" src="img/variables2.png" alt="Imagen">
+                <img class="img-fluid" src="img/selectivas2.png" alt="Imagen">
             </div>
            
            
@@ -68,14 +69,15 @@
 <article class="container-fluid  postcard dark blue">
   
     <div class="postcard__text">
-        <h1 class="postcard__title blue text-center"><a href="#">Números</a></h1>
+        <h1 class="postcard__title blue text-center"><a href="#">Clases</a></h1>
         <div class="postcard__subtitle small">
         </div>
         <div class="postcard__bar"></div>
-        <div class="postcard__preview-txt text-light"> <strong > <h4>. Concepto</h4> </strong> <p>Enteros: son aquellos que no contienen decimales, pueden ser positivos o negativos además del cero.</p> 
-            <p>Float: representa números reales positivos y negativos .</p> 
+        <div class="postcard__preview-txt text-light"> <strong > <h4>. Concepto</h4> </strong> 
+            <p>es cualquier construcción de programa que repite una sentencia o secuencia de sentencias un número de veces. La sentencia o grupo de sentencias que se repite en un bloque se denomina cuerpo del ciclo y cada repetición del cuerpo del ciclo se llama iteración del ciclo. Un ciclo while tiene una condición del ciclo, una expresión lógica que controla la secuencia de repetición. La posición de esta condición del ciclo es delante del cuerpo del ciclo y significa que un ciclo while es un ciclo de preverificación de modo que cuando se ejecuta el mismo, se evalúa la condición antes de que se ejecute el cuerpo del ciclo.</p> 
+            
         <strong > <h4>. Descripción</h4> </strong>
-        </p> Es importante distinguir entre estos dos tipos de núumeros, pues a la hora de trabajar con ellos el resultado puede verse afectado dependiendo de cuales utilicemos. Por ejemplo el resultado de la división de dos numeros enteros dara como resultado otro número entero, también se puede pasar de enteros a float usando " 10.to_f " o viceversa con " 10.5.to_i " </p> </div>
+        <p> La estructura basica es while, expresion y end. While va precedido de una expresion la cual se evaluara por cada iteración y si el resultado da verdadero vuelve a ejecutar el codigo que contiene la estructura hasta donde aparece la instrucción end. </p> </div>
    <br>
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -88,13 +90,13 @@
             <div class="col-sm-6 ">
                 
                 <div class="text-light ">Código</div>
-                <img class="img-fluid " src="img/numero1.png"  alt="Imagen">
+                <img class="img-fluid " src="img/iterativa1.png"  alt="Imagen">
             </div>
            
             <div class="col-sm-6">
                 
                 <div class="text-light text-justify">Resultado </div>
-                <img class="img-fluid" src="img/numero2.png" alt="Imagen">
+                <img class="img-fluid" src="img/iterativa2.png" alt="Imagen">
             </div>
            
            
@@ -106,89 +108,11 @@
 
 </article>
 
-<article class="container-fluid  postcard dark blue">
-  
-    <div class="postcard__text">
-        <h1 class="postcard__title blue text-center"><a href="#">Cadenas</a></h1>
-        <div class="postcard__subtitle small">
-        </div>
-        <div class="postcard__bar"></div>
-        <div class="postcard__preview-txt text-light"> <strong > <h4>. Concepto</h4> </strong> <p>es una sucesión de caracteres (letras, números u otros signos o símbolos). Si no se ponen restricciones al alfabeto, una cadena podrá estar formada por cualquier combinación finita de los caracteres disponibles (las letras de la 'a' a la 'z' y de la 'A' a la 'Z', los números del '0' al '9', el espacio en blanco ' ', símbolos diversos '!', '@', '%', etcétera).</p> 
-        <strong > <h4>. Descripción</h4> </strong>
-        </p>  Las cadenas se pueden asignar a variables o imprimirlas directamente, de caracterizan por estar dentro de comillas simples o dobles y se pueden concatenar e interpolar. </p> </div>
-   <br>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h5><strong>Ejemplo</strong>  </h5>
-                <br>
-            </div>
-        </div>
-            <div class="row text-center">
-               
-            <div class="col-sm-6 ">
-                
-                <div class="text-light ">Código</div>
-                <img class="img-fluid " src="img/cadena1.png"  alt="Imagen">
-            </div>
-           
-            <div class="col-sm-6">
-                
-                <div class="text-light text-justify">Resultado </div>
-                <img class="img-fluid" src="img/cadena2.png" alt="Imagen">
-            </div>
-           
-           
-          
-        </div>
-    
-    </div>
-
-
-</article>
-
-<article class="container-fluid  postcard dark blue">
-  
-    <div class="postcard__text">
-        <h1 class="postcard__title blue text-center"><a href="#">Entrada y salidad</a></h1>
-        <div class="postcard__subtitle small">
-        </div>
-        <div class="postcard__bar"></div>
-        <div class="postcard__preview-txt text-light"> <strong > <h4>. Concepto</h4> </strong> <p>se denomina sentencias de entrada a aquellas que permiten enviar información desde el exterior al interior de un programa y sentencias de salida a aquellas que permiten enviar información desde el interior al exterior de un programa.</p> 
-        <strong > <h4>. Descripción</h4> </strong>
-        </p>  En primer lugar se coloca el nombre que tendra nuesta varible, este debe expresar el contenido que contendra la variable (no deben utilizarse palabras reservadas para definir variables, ni inicializar las varibles con mayusculas o números), luego el operador de asignacion = y por ultimo el dato que contendra dicha varible (En ruby no es necesario definir el tipo de datos y su tipo puede cambiar a lo largo de la ejecución del programa).</p> </div>
-   <br>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h5><strong>Ejemplo</strong>  </h5>
-                <br>
-            </div>
-        </div>
-            <div class="row text-center">
-               
-            <div class="col-sm-6 ">
-                
-                <div class="text-light ">Código</div>
-                <img class="img-fluid " src="img/variables1.png"  alt="Imagen">
-            </div>
-           
-            <div class="col-sm-6">
-                
-                <div class="text-light text-justify">Resultado </div>
-                <img class="img-fluid" src="img/variables2.png" alt="Imagen">
-            </div>
-           
-           
-          
-        </div>
-    
-    </div>
-
-
-</article>
 
 <article class="container-fluid  postcard dark blue text-center">
     <div class="postcard__text">
         <h1 class="postcard__title blue"><a href="#">Vídeos</a></h1>
+       
     </div>
        
 </article>
@@ -197,29 +121,35 @@
                
         <div class="col-sm-6 ">
             
-            <div class="text-light ">VARIABLES</div>
-            <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/A-uKUrBw_5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text-light ">SELECTIVAS</div>
+            <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/1a9cDRLOvlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
         </div>
        
         <div class="col-sm-6">
-            <div class="text-light ">NUMEROS</div>
-            <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/xPx8E1ne8oU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+            <div class="text-light ">ITERATIVAS</div>
+            <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/VYCCdaVwtmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
         </div>
        
-        <div class="col-sm-6">
-            <div class="text-light ">CADENAS</div>
-            <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/1rA489RNCOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
-        </div>
-        <div class="col-sm-6">
-            <div class="text-light ">CADENAS</div>
-            <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/1rA489RNCOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
-        </div>
+     
      
     </div>
 </div>
+<br>
+<br>
+<article class="container-fluid  postcard dark blue text-center">
+   
+    <div class="postcard__text">
+        <h5><strong>
+       <a class="text-decoration-none" href="https://www.youtube.com/channel/UCLXRGxAzeaLDGaOphqapzmg">Creador: Codigofacilito</a>
+    </strong>  </h5>
+    </div>
+    <div class="postcard__text">
+        <h5><strong>
+        <a class="text-decoration-none" href="https://www.youtube.com/watch?v=fvrphRoN7P0&list=PL954bYq0HsCUG5_LbfZ54YltPinPSPOks&index=1">Lista completa de reproducción</a>
+    </strong>  </h5>
+    </div>
+       
+</article>
 
 
 
